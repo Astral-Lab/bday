@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julian Birthday Gift</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta property="og:site_name" content="Julian Birthday Gift">
+    <meta property="og:title" content="Happy Birthday!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://astral-lab.github.io/BirthdayCard/ogp.png">
+    <meta property="og:image:type" content="image/png">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="animContainer">
+                <div class="hidden">TO JULIAN,</div>
+                <div class="description">TO JULIAN,</div>
+            </div>
+        </header>
+        <main>
+            <div class="animContainer">
+                <div class="hidden">AN APEX LEGEND,</div>
+                <div class="description">AN <span style="color: red;"">APEX LEGEND</span>,</div>
+              </div>
+              <div class="animContainer">
+                <div class="hidden">R6 CHAMPION,</div>
+                <div class="description"><span style="color: rgb(0, 191, 255);">R6</span> CHAMPION,</div>
+              </div>
+              <div class="animContainer">
+                <div class="hidden">AND A GREAT FRIEND</div>
+                <div class="description">AND A GREAT FRIEND</div>
+              </div>
+              <div class="animContainer">
+                <div class="hidden">HAPPY BIRTHDAY</div>
+                <div class="description">HAPPY BIRTHDAY</div>
+            </div>
+        </main>
+        <footer>
+            <div class="animContainer">
+                <div class="hidden">FROM JOSH</div>
+                <div class="description">FROM JOSH</div>
+            </div>
+              <div class="animContainer">
+                <div class="hidden">CODE <br/> XXXX-XXXX-XXXX</div>
+                <div class="description">CODE <br/> <span style="color: #006FCD;">492K</span>-<span style="color: #006FCD;">LTNE</span>-<span style="color: #006FCD;">8RE7</span></div>
+            </div>
+        </footer>
+    </div>
+    <div class="FNGContainer"></div>
+    <script defer>
+        const windowWidth = 375;
+        const windowHeight = window.innerHeight;
+        const columns = 3;
+        const text = "FNG";
+        const fontSize = Math.floor(windowWidth / (columns * text.length));
+        console.log("window width: ", windowWidth)
+
+        for(let i = 0; i < columns; i++) {
+            for(let i = 0; i < Math.floor(windowHeight / fontSize); i++) {
+                const FNGDiv = document.createElement("div");
+                FNGDiv.style.fontSize = `${fontSize}px`;
+                FNGDiv.innerText = "FNG";;
+                FNGDiv.classList.add("fng");
+                document.querySelector(".FNGContainer").appendChild(FNGDiv);
+            }
+        }
+    </script>
+</body>
+</html>
